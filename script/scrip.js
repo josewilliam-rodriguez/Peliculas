@@ -9,15 +9,7 @@ fetch(url)
         const mainElement = document.getElementById("main");
         showData(data, mainElement);
     })
-    .catch(error => console.error("Error al obtener los datos:", error));
-    const imageContainer = document.getElementById("image-container");
-
-    imagesData.forEach((image) => {
-        const imgElement = document.createElement("img");
-        imgElement.src = image.image_url;
-        imgElement.alt = image.description;
-        imageContainer.appendChild(imgElement);
-    });
+   
 
     const searchValue = document.getElementById("search");
 
